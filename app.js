@@ -1,6 +1,6 @@
-const Manager = require("./02-Homework/Develop/lib/Manager");
-const Engineer = require("./02-Homework/Develop/lib/Engineer");
-const Intern = require("./02-Homework/Develop/lib/Intern");
+const Manager = require("./library/Develop/lib/Manager");
+const Engineer = require("./library/Develop/lib/Engineer");
+const Intern = require("./library/Develop/lib/Intern");
 const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
@@ -8,7 +8,7 @@ const fs = require("fs");
 const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
-const render = require("./02-Homework/Develop/lib/htmlRenderer");
+const render = require("./library/Develop/lib/htmlRenderer");
 
 
 // Write code to use inquirer to gather information about the development team members,
